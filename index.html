@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .container {
+                width: 100%;
+                margin: 0px;
+                padding: 0;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                background-image: url(GIF.gif);
+            }
+
+            .box {
+                width: 100%;
+                margin: 10px;
+                background-color: #f2f2f2;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+                transition: transform 0.2s;
+                cursor: pointer;
+            }
+
+            .content-box {
+                border: 1px solid #777;
+                padding: 10px;
+                margin: 10px;
+                width: 100%;
+            }
+
+            .box:hover, .content-box:hover {
+                transform: scale(1.05);
+            }
+
+            .img {
+                float: left;
+
+            }
+
+            .container-content {
+            position: relative;
+            width: 50%;
+            }
+
+            .img-container {
+            display: block;
+            height: auto;
+            }
+
+            .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #008CBA;
+            overflow: hidden;
+            width: 200px;
+            height: 0;
+            transition: .5s ease;
+            }
+
+            .container-content:hover .overlay {
+            height: 100%;
+            }
+
+            .text-overlay {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+            }
+            
+
+            .text {
+                padding-left: 20px;
+                float: left;
+            }
+
+            .profile {
+                padding-left: 20px;
+                float: left;
+            }
+
+            h3 {
+                color: blue;
+                font-size: 20px;
+            }
+
+
+            @media screen and (max-width: 768px) {
+            .box {
+                width: calc(70% - 20px);
+            }
+            }
+
+            @media screen and (max-width: 480px) {
+            .box {
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="container">
+        <div class="box">
+
+        <div class="img">
+        <div class="container-content">
+        <img id="float-img" src="profile_picture copy.jpeg" width="200" length="90" class="img-container"/>
+        <div class="overlay">
+            <div class="text-overlay">
+                Student ID: 2702325962
+                Class: L1AC
+            </div>
+          </div>
+        </div>
+        </div>
+        
+        <div class="profile">
+        <h1>Introduction</h1>
+        <h3>Matthew Staniswinata</h3>
+        <p><a href="https://github.com/MS-092" style="text-decoration: none" text-align="center">GitHub Profile</a></p>
+        </div>
+
+        <div class="text">
+        <p text-align="center">
+            My name is Matthew Staniswinata.
+            I am a freshman student in Binus university international. I would consider myself as an introverted person, and if possible would keep things to myself. I consider myself to be more as a Logistics person.
+            An observant, judging, intuitive in majority case of situations and circumstances. Not putting much on my emotions in making decisions.
+        </p>
+        
+
+        <p>Gender:</p>
+
+        <input type="radio" id="male_gender" name="gender_input" value="male" disabled checked>
+        <label for="male_gender">Male</label><br>
+
+        <input type="radio" id="female_gender" name="gender_input" value="female" disabled>
+        <label for="female_gender">Female</label>
+        </div>
+        
+        </div>
+
+        <div class="box">
+
+
+            <h1>Projects</h1>
+
+        <div class="content-box">
+            <p>Education</p>
+
+            <li>
+                <a href="https://www.bsj.sch.id" style="text-decoration: none">British School of Jakarta</a>
+            </li>
+
+            <li>
+                <a href="https://international.binus.ac.id" style="text-decoration: none">Binus University International</a>
+            </li>
+
+        </div>
+
+        <div class="content-box">
+        <p>Hard skills</p>
+
+        <input type="checkbox" id="Data structure" disabled>
+        <label for="Data structure">Data structure</label><br>
+
+        <input type="checkbox" id="Algorithms" disabled>
+        <label for="Algorithms">Algorithms</label><br>
+
+        <input type="checkbox" id="OOP" disabled checked>
+        <label for="OOP">Object Oriented Programming</label><br>
+
+        </div>
+
+        <div class="content-box">
+        <p>Soft skills</p>
+
+        <input type="checkbox" id="Communication" disabled>
+        <label for="Communication">Communication</label><br>
+
+        <input type="checkbox" id="Problem Solving" disabled>
+        <label for="Problem Solving">Problem Solving</label><br>
+
+        <input type="checkbox" id="Time management" disabled checked>
+        <label for="Time management">Time management</label><br>
+        </div>
+
+        </div>
+
+        <div class="box">
+            <h1>Experience</h1>
+            <div class="dropdown-menu">
+            
+            
+            <button>Hobbies:</button>
+            <div class="dropdown-content">
+            <li>Video games</li>
+            <li>Programming</li>
+            <li>Workout</li>
+            <li>Reading</li>
+            </div>
+
+            <button>Interests:</button>
+            <div class="dropdown-content-2">
+            <li>AI&ML</li>
+            <li>WebApp</li>
+            <li>Competitive Programming</li>
+            <li>Ethical Hacking</li>
+            </div>
+
+            <button>Favorites:</button>
+            <div class="dropdown-content-3">
+            <li>Food: Fried Rice</li>
+            <li>Games: Minecraft</li>
+            <li>Programming language: Python</li>
+            </div>
+
+        </div>
+
+    </body>
+</html>
